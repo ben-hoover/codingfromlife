@@ -1,0 +1,278 @@
+/*
+  Coding from Life – Sketch 2: fluid layout
+
+  For sketch 2 you'll be positioning elements relative to a fluid container. This
+  means you'll need to use percentages when positioning and sizingelements within
+  your frame.
+*/
+
+
+body {
+  background-color: black;
+}
+
+.frame {
+  width: 95vw;
+  height: 57vw;
+  background: white;
+  margin: 2.5vw auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.tabletop {
+  margin: 0 auto;
+  position: absolute;
+  top: 5.1%;
+  left: 6.3%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: calc(0.25 * 57vw) 0 0 95vw;
+  border-color: transparent transparent transparent lightgrey;
+  transform: skewX(-40deg);
+}
+
+.table {
+  top: 30%;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  background: lightgrey;
+  position: absolute;
+}
+
+.vasetop {
+  top: 0;
+  left: 30%;
+  transform: rotate(-3deg);
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 41.67%;
+  width: 16.5%;
+}
+
+.vasemid {
+  position: absolute;
+  top: 41.67%;
+  left: 30.8%;
+  transform: rotate(-3deg);
+  width: 0;
+  height: 0;
+  border-top: calc(0.0834 * 57vw) solid rgba(255, 255, 255, 0.8);;
+  border-right: calc(0.0825 * 95vw) solid transparent ; 
+  border-left: calc(0.0825 * 95vw) solid  transparent;
+}
+
+.vasemid2 {
+  position: absolute;
+  top: 50%;
+  left: 31.3%;
+  transform: rotate(-3deg);
+  width: 0;
+  height: 0;
+  border-bottom: calc(0.0834 * 57vw) solid rgba(255, 255, 255, 0.8);;
+  border-right: calc(0.0825 * 95vw) solid transparent ; 
+  border-left: calc(0.0825 * 95vw) solid  transparent;
+}
+
+.vasebot {
+  top: 58.34%;
+  left: 31.5%;
+  transform: rotate(-3deg);
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 8.34%;
+  width: 16.5%;
+}
+
+
+.stemscontainer {
+  top: 0;
+  left: 30%;
+  transform: rotate(-3deg);
+  position: absolute;
+  height: 50%;
+  width: 16.5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: end;
+}
+
+.stem {
+  height: 81.67%;
+  width: 12.12%;
+  background: green;
+}
+
+.redpumpkin {
+  position: absolute;
+  width: 30%;
+  height: 41.67%;
+  right: 7%;
+  top: 50%;
+  border-radius: 50%;
+  background-color: orangered;
+}
+
+.redpumpkintop {
+  position: absolute;
+  width: 10%;
+  height: 20.84%;
+  top: 41.67%;
+  right: 18.5%;
+  background-color: orangered;
+  border-radius: 50%;
+}
+
+.redpumpkintoptop {
+  position: absolute;
+  width: 5%;
+  height: 6.67%;
+  top: 38.34%;
+  right: 21.1%;
+  background-color: brown;
+  border-radius: 40%;
+}
+
+.potatopumpkin {
+  position: absolute;
+  top: 25%;
+  left: 35%;
+  width: 30%;
+  height: 33.34%;
+  border-radius: 40%;
+  background: darkkhaki;
+}
+
+.rightcandlestick {
+  position: absolute;
+  right: 30%;
+  top: 0;
+  width: 1%;
+  height: 70%;
+  background: goldenrod;
+  transform: rotate(-1deg);
+}
+
+.yellowpumpkin {
+  position: absolute;
+  left: 20%;
+  top: 58.34%;
+  width: 30%;
+  height: 33.34%;
+  transform: rotate(-2deg);
+  background: khaki;
+  border-radius: 40%
+
+}
+
+.yellowpumpkinstem {
+  position: absolute;
+  left: 49%;
+  top: 70.83%;
+  background: brown;
+  width: 3.5%;
+  height: 5.83%;
+  transform: rotate(-3deg);
+  border-radius: 10%;
+}
+
+.leftcandlestickbot {
+  position: absolute;
+  left: 11%;
+  top: 45%;
+  width: 1%;
+  height: 36.67%;
+  background: goldenrod;
+  transform: rotate(-10deg);
+}
+
+.leftcandlesticktop {
+  position: absolute;
+  left: 6.8%;
+  top: 26.67%;
+  width: 4%;
+  height: 20%;
+  background: goldenrod;
+  transform: rotate(-10deg);
+}
+
+.leftcandlestickbase {
+  position: absolute;
+  top: 71%;
+  left: 6%;
+  width: 12%;
+  height: 16.67%;
+  border-width: calc(0.01 * 95vw);
+  border-color: goldenrod;
+  border-radius: 50%;
+  border-style: solid;
+}
+
+.leftcandlestickbaseconnector {
+  position: absolute;
+  left: 13%;
+  top: 78.8%;
+  width: 6.5%;
+  height:1.67%;
+  background: goldenrod;
+  transform: rotate(-10deg);
+}
+
+.potbottom {
+  position: absolute;
+  left: 1%;
+  top: 11.67%;
+  transform: rotate(-6deg);
+  width: 25%;
+  height: 39.167%;
+  border-radius: 40%;
+  background: rgb(217,217,222);
+    background: linear-gradient(90deg, rgba(217,217,222,1) 0%, rgba(135,135,135,1) 8%, rgba(0,0,0,1) 100%);
+}
+
+.pottop {
+  position: absolute;
+  top: 11.67%;
+  left: 0.8%;
+  width: 23%;
+  height: 6.67%;
+  transform: rotate(-6deg);
+  background: rgb(217,217,222);
+    background: linear-gradient(90deg, rgba(180,180,180,1) 0%, rgba(135,135,135,1) 8%, rgba(0,0,0,1) 100%);
+}
+
+.pottoptop {
+  position: absolute;
+  top: 7.167%;
+  left: 9.5%;
+  width: 4%;
+  height: 5%;
+  border-radius: 25%;
+  transform: rotate(-6deg);
+  background: black;
+}
+
+.candle {
+  position: absolute;
+  background: lightyellow;
+  width: 3%;
+  height: 21.67%;
+  top: 5.33%;
+  left: 5.1%;
+  transform: rotate(-10deg);
+}
+
+.candlewick {
+  position: absolute;
+  background: black;
+  width: 0.4%;
+  height: 2.5%;
+  top: 3%;
+  left: 5.2%;
+  transform: rotate(-10deg);
+}
+
+/* Your CSS goes here */
