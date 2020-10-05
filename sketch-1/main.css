@@ -1,0 +1,276 @@
+/*
+  Coding from Life – Sketch 1: fixed layout
+
+  For sketch 1 you'll be positioning elements relative to an element with a fixed
+  width and height. For this sketch you can position elements by using pixel values.
+*/
+
+body {
+  background-color: black;
+}
+
+.frame {
+  width: 1000px;
+  height: 600px;
+  background: white;
+  margin: 30px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.tabletop {
+  margin: 0 auto;
+  position: absolute;
+  top: 30px;
+  left: 63px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 150px 0 0 1000px;
+  border-color: transparent transparent transparent lightgrey;
+  transform: skewX(-40deg);
+}
+
+.table {
+  top: 180px;
+  left: 0px;
+  width: 1000px;
+  height: 600px;
+  background: lightgrey;
+  position: absolute;
+}
+
+.vasetop {
+	top: 0px;
+	left: 300px;
+	transform: rotate(-3deg);
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.8);
+	height: 250px;
+	width: 165px;
+}
+
+.vasemid {
+	position: absolute;
+	top: 250px;
+	left: 308px;
+	transform: rotate(-3deg);
+	width: 0;
+	height: 0;
+	border-top: 50px solid rgba(255, 255, 255, 0.8);;
+	border-right: 82.5px solid transparent ; 
+	border-left: 82.5px solid  transparent;
+}
+
+.vasemid2 {
+	position: absolute;
+	top: 300px;
+	left: 313px;
+	transform: rotate(-3deg);
+	width: 0;
+	height: 0;
+	border-bottom: 50px solid rgba(255, 255, 255, 0.8);;
+	border-right: 82.5px solid transparent ; 
+	border-left: 82.5px solid  transparent;
+}
+
+.vasebot {
+	top: 350px;
+	left: 315px;
+	transform: rotate(-3deg);
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.8);
+	height: 50px;
+	width: 165px;
+}
+
+
+.stemscontainer {
+	top: 0px;
+	left: 300px;
+	transform: rotate(-3deg);
+	position: absolute;
+	height: 300px;
+	width: 165px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: end;
+}
+
+.stem {
+	height: 245px;
+	width: 20px;
+	background: green;
+}
+
+.redpumpkin {
+	position: absolute;
+	width: 300px;
+	height: 250px;
+	right: 70px;
+	top: 300px;
+	border-radius: 50%;
+	background-color: orangered;
+}
+
+.redpumpkintop {
+	position: absolute;
+	width: 100px;
+	height: 125px;
+	top: 250px;
+	right: 185px;
+	background-color: orangered;
+	border-radius: 50%;
+}
+
+.redpumpkintoptop {
+	position: absolute;
+	width: 50px;
+	height: 40px;
+	top: 230px;
+	right: 211px;
+	background-color: brown;
+	border-radius: 40%;
+}
+
+.potatopumpkin {
+	position: absolute;
+	top: 150px;
+	left: 350px;
+	width: 300px;
+	height: 200px;
+	border-radius: 40%;
+	background: darkkhaki;
+}
+
+.rightcandlestick {
+	position: absolute;
+	right: 300px;
+	top: 0px;
+	width: 10px;
+	height: 420px;
+	background: goldenrod;
+	transform: rotate(-1deg);
+}
+
+.yellowpumpkin {
+	position: absolute;
+	left: 200px;
+	top: 350px;
+	width: 300px;
+	height: 200px;
+	transform: rotate(-2deg);
+	background: khaki;
+	border-radius: 40%
+
+}
+
+.yellowpumpkinstem {
+	position: absolute;
+	left: 490px;
+	top: 425px;
+	background: brown;
+	width: 35px;
+	height: 35px;
+	transform: rotate(-3deg);
+	border-radius: 10%;
+}
+
+.leftcandlestickbot {
+	position: absolute;
+	left: 110px;
+	top: 270px;
+	width: 10px;
+	height: 220px;
+	background: goldenrod;
+	transform: rotate(-10deg);
+}
+
+.leftcandlesticktop {
+	position: absolute;
+	left: 68px;
+	top: 160px;
+	width: 40px;
+	height: 120px;
+	background: goldenrod;
+	transform: rotate(-10deg);
+}
+
+.leftcandlestickbase {
+	position: absolute;
+	top: 420px;
+	left: 60px;
+	width: 120px;
+	height: 100px;
+	border-width: 10px;
+	border-color: goldenrod;
+	border-radius: 50%;
+	border-style: solid;
+}
+
+.leftcandlestickbaseconnector {
+	position: absolute;
+	left: 130px;
+	top: 472px;
+	width: 70px;
+	height:10px;
+	background: goldenrod;
+	transform: rotate(-10deg);
+}
+
+.potbottom {
+	position: absolute;
+	left: 10px;
+	top: 70px;
+	transform: rotate(-6deg);
+	width: 250px;
+	height: 235px;
+	border-radius: 40%;
+	background: rgb(217,217,222);
+    background: linear-gradient(90deg, rgba(217,217,222,1) 0%, rgba(135,135,135,1) 8%, rgba(0,0,0,1) 100%);
+}
+
+.pottop {
+	position: absolute;
+	top: 70px;
+	left: 8px;
+	width: 230px;
+	height: 40px;
+	transform: rotate(-6deg);
+	background: rgb(217,217,222);
+    background: linear-gradient(90deg, rgba(180,180,180,1) 0%, rgba(135,135,135,1) 8%, rgba(0,0,0,1) 100%);
+}
+
+.pottoptop {
+	position: absolute;
+	top: 43px;
+	left: 95px;
+	width: 40px;
+	height: 30px;
+	border-radius: 10px;
+	transform: rotate(-6deg);
+	background: black;
+}
+
+.candle {
+	position: absolute;
+	background: lightyellow;
+	width: 30px;
+	height: 130px;
+	top: 32px;
+	left: 51px;
+	transform: rotate(-10deg);
+}
+
+.candlewick {
+	position: absolute;
+	background: black;
+	width: 4px;
+	height: 15px;
+	top: 18px;
+	left: 52px;
+	transform: rotate(-10deg);
+}
+
+/* Your CSS goes here */
